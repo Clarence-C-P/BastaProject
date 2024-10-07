@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form onsubmit="return validateLogIn()" id="signup-form" action="authenticate.php" method="post">
+    <label for="email">Email (Username):</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirm-password"><br><br>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName">
+    <p id="error" style="color: tomato;"></p><br>
+    <button type="submit">Sign Up</button>
+    <p>
+      <a href="index.html">Back to Login</a>
+    </p>
+  </form>
+  <script src="signup.js"></script>
+</body>
+</html>
